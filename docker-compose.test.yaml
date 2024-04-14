@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  httpd-slim:
+    build: .
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - ./test:/www
